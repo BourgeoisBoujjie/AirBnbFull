@@ -6,8 +6,7 @@ const router = express.Router()
 
 // controller
 router.get('/', (req, res) =>{
-    // res.render('houses')
-    res.send('hello from houses')
+    res.redirect('houses')
 })
 
 // export
