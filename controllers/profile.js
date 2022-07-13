@@ -4,10 +4,15 @@ const res = require('express/lib/response')
 const router = express.Router()
 
 
-// controller
+// controller GET
 router.get('/', (req, res) =>{
     // res.render('profile')
     res.send('hello from profile')
+})
+
+router.patch('/', (req, res) =>{
+    //patch body
+    res.render('profile')
 })
 
 // export
