@@ -1,0 +1,177 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/airbnbStyle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./images/airbnb-flavicon.png" />
+    <title>Houses</title>
+  </head>
+  <body>
+    <!-- Top NavBar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img class="housesImg" src="./images/logo-airbnb.png" alt="logo-airbnb"/>
+        </a>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-secondary btn-sm" type="submit"><img class="rounded-circle pr-5" src="./images/IMG_2117-2.jpg" alt="logo-airbnb" width="20" height="20" /> Justin B</button>
+          <button class="btn btn-outline-secondary btn-sm" type="submit">Logout</button>
+        </div>        
+      </div>
+    </nav>
+    <!-- Filter Bar -->
+    <div class="filter bg-light py-2">
+      <form class="container">
+        <div class="row">
+          <div class="col">
+            <div class="input-group input-group-sm">
+              <span class="input-group-text">📍</span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Any Location</option>
+                <option value="1">Koh Phangan</option>
+                <option value="2">Koh Samui</option>
+                <option value="3">Bali</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-group input-group-sm">
+              <span class="input-group-text">🏠</span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Any Rooms</option>
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+                <option value="5">5 Rooms</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-group input-group-sm">
+              <span class="input-group-text">💲</span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Price (High to Low)</option>
+                <option value="1">Price (Low to High)</option>
+              </select>
+            </div>
+          </div>
+          <!-- change this to input type="number" -->
+          <div class="col">
+            <div class="input-group input-group-sm">              
+                <span class="input-group-text">$</span>                
+                <input type="number" class="form-control" placeholder="355" min="20" max="3500" />              
+            </div>
+          </div>          
+          <div class="col">
+            <input class="form-control form-control-sm" type="text" placeholder="House Name..." aria-label=".form-control-sm" />
+          </div>
+          <div class="col">        
+            <button type="submit" class="btn btn-sm btn-success">Search</button>
+          </div>
+        </div>
+        </form>
+    </div>
+    <!-- Cards -->
+    <div class="container">
+      <div class="row row-cols-4 g-3 pt-3">
+        <div class="col">
+          <div class="card">
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2002/house_02_01.png" class="card-img-top" alt="luxury-view">
+            <div class="card-body">
+              <small class="text-start">📍Koh Phangan • 3 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">Private Villa Lotus 1</a></h5>
+              <div class="row">
+                <div class="col"><small>👍 3 Reviews</small></div>
+                <div class="col text-end"><small class="text-end">$350/night</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2003/house_03_01.png" class="card-img-top" alt="nice-pic">
+            <div class="card-body">
+              <small class="text-start">📍Bali • 3 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">Seminyak KuDeTa Beach</a></h5>
+              <div class="row">
+                <div class="col"><small>👎 2 Reviews</small></div>
+                <div class="col text-end"><small class="text-end">$120/night</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2004/house_04_01.png" class="card-img-top" alt="beauty">
+            <div class="card-body">
+              <small class="text-start">📍Koh Phangan • 2 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">Archie Village House</a></h5>
+              <div class="row">
+                <div class="col"><small>👍 1 Reviews</small></div>
+                <div class="col text-end"><small class="text-end">$80/night</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2005/house_05_01.png
+            " class="card-img-top" alt="koh-phangan">
+            <div class="card-body">
+              <small class="text-start">📍Koh Phangan • 6 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">Luxury 6 Beds Villa</a></h5>
+              <div class="row">
+                <div class="col"><small>0 Reviews</small></div>
+                <div class="col text-end"><small>$150/night</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2006/house_06_01.png
+            " class="card-img-top" alt="bali">
+            <div class="card-body">
+              <small class="text-start">📍Bali • 5 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">5 Bed Villa Canggu</a></h5>
+              <div class="row">
+                <div class="col"><small>👍1 Reviews</small></div>
+                <div class="col text-end"><small>$250/night</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2008/house_08_01.png" class="card-img-top" alt="koh-phangan">
+            <div class="card-body">
+              <small class="text-start">📍Koh Phangan • 4 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">Nirvana Koh Phangan</a></h5>
+              <div class="row">
+                <div class="col"><small>0 Reviews</small></div>
+                <div class="col text-end"><small>$100/night</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2007/house_07_01.png
+            " class="card-img-top" alt="Bali">
+            <div class="card-body">
+              <small class="text-start">📍Bali • 6 Rooms</small>
+              <h5 class="py-2"><a href="house.html" class="stretched-link">Luxury at Bali</a></h5>
+              <div class="row">
+                <div class="col"><small>👍5 Reviews</small></div>
+                <div class="col text-end"><small>$350/night</small></div>
+              </div>
+            </div>            
+          </div>
+        </div>        
+      </div>
+    </div>
+  </body>
+  </html>
+  

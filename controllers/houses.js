@@ -6,33 +6,33 @@ const router = express.Router()
 
 // controller GET
 router.get('/', (req, res) =>{
-    // res.render('houses')
-    res.send('hello from houses')
+    res.render('houses/list')
+    // res.send('hello from houses')
 })
 
 router.get('/create', (req, res) =>{
-    res.render('/houses/create')
+    res.render('houses/create')
 })
 
 router.get('/:id', (req, res) =>{
-    res.render('/houses/one')
+    res.render('houses/one')
 })
 
 router.get('/:id/edit', (req, res) =>{
-    res.render('/houses/edit')
+    res.render('houses/edit')
 })
 
 // controller POST/PATCH/DELETE
 router.post('/', (req, res) =>{
-    res.render('/houses')
+    
 })
 
 router.patch('/:id', (req, res) =>{
-    res.render('/houses/one')
+    
 })
 
 router.delete('/:id', (req, res) =>{
-    res.send('/houses')
+
 })
 
 // export

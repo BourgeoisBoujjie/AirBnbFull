@@ -42,7 +42,7 @@ router.post('/signup', async (req, res) => {
     }catch{
         throw err
     }
-    res.redirect('/houses')
+    res.redirect('houses/list')
 })
 
 

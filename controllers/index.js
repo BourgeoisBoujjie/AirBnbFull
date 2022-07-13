@@ -6,7 +6,7 @@ const router = express.Router()
 
 // controller
 router.get('/', (req, res) =>{
-    res.redirect('houses')
+    res.redirect('/houses')
 })
 
 // export
