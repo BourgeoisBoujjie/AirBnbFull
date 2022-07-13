@@ -6,7 +6,7 @@ const router = express.Router()
 
 // controller GET
 router.get('/', (req, res) =>{
-    res.render('auth')
+    res.render('/auth')
     // res.send('hello from auth')
 })
 
@@ -19,7 +19,7 @@ router.get('/signup', (req, res) => {
 })
 
 router.get('/logout', (req, res) => {
-    res.render('houses')
+    res.render('login')
 })
 
 //  controller POST
