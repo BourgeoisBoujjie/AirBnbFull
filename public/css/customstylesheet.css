@@ -12,3 +12,7 @@ h5 a, h5 a:link, h5 a:visited, h5 a:hover {
     background-image: url(https://res.cloudinary.com/dsko6ntfj/image/upload/v1642399115/portal/web%20development%20beginners/05%20Project%20Airbnb/assets/thailand.jpg;);   
     background-size: cover;
 }
+/* nav a {
+    border-radius: 10%;
+    pointer-events: none;
+} */

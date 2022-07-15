@@ -21,12 +21,36 @@ router.get('/signup', (req, res) => {
 })
 
 router.get('/logout', (req, res) => {
-    res.render('login')
+    req.logout()
+    req.session.destroy(err => {
+        if (err) {
+          next(err)
+        }
+        res.clearCookie('connect.sid')
+        res.redirect('/auth/login')
+      })
 })
 
 //  controller POST
-router.post('/login', (req, res) => {
-    res.render('login')
+router.post('/login', async (req, res, next) => {
+    try{
+        // console.log(req.body)
+        let foundLogin = await Users.findOne({
+            email: req.body.email,
+            password: req.body.password
+        })
+        if(foundLogin){            
+            req.login(foundLogin, (err) =>{
+                if(err){throw err
+                }else{
+                    res.redirect('/houses')}
+            })            
+        } else {            
+            throw new Error('Email or Password are incorrect')
+        }
+    } catch (err){
+        next (err)
+    }
 })
 
 router.post('/signup', async (req, res, next) => {
